@@ -4,6 +4,7 @@ import cv2
 from PIL import Image
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
+import matplotlib.patheffects as path_effects
 from segmentation import preprocessing, hitung_sdmap, split, merge_blocks, remove_small_classes, combine, simplify_to_two_classes, overlay_mask
 
 st.set_page_config(layout="wide")
