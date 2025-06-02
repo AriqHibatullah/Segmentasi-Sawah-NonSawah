@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+import cv2
 from PIL import Image
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
@@ -74,7 +75,7 @@ with tab1:
                         progress_bar.progress(st.session_state.progress)
 
                 image_rgb = np.array(img)
-                image_bgr = image_rgb[..., ::-1]
+                image_bgr = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2BGR)
                 canvas, image_rgb, lab, gray = preprocessing(image_bgr)
 
                 st.session_state.canvas = canvas
@@ -429,7 +430,7 @@ with tab9:
             plt.figure(figsize=(12, 8))
 
             plt.subplot(1, 1, 1)
-            plt.imshow(st.session_state.overlayed[..., ::-1])
+            plt.imshow(cv2.cvtColor(st.session_state.overlayed, cv2.COLOR_BGR2RGB))
             plt.title('Segmentasi sawah vs non-sawah')
             plt.axis('off')
             st.pyplot(plt)
