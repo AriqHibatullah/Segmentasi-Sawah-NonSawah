@@ -4,4 +4,3 @@ cv
 opencv-python
 Pillow
 matplotlib
-math
