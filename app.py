@@ -156,7 +156,7 @@ with tab3:
 
         with col2:
             min_size = st.selectbox("Ukuran miniman blok hasil split:", [1, 2, 4, 8, 16, 32, 64, 128, 256])
-            p_split = st.number_input("p:", min_value=0.1, max_value=0.9, value=0.82, step=0.1)
+            p_split = st.number_input("Threshold split (p):", min_value=0.1, max_value=0.9, value=0.82, step=0.1)
             sigma_split = np.percentile(st.session_state.sd_map[st.session_state.sd_map >= 0], p_split * 100)
             split_threshold = sigma_split ** 2
 
