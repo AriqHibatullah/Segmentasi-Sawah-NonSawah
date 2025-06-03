@@ -119,19 +119,27 @@ def normalisasi_glcm(glcm_matrix):
     return glcm_matrix.astype(np.float64) / total
 
 def ekstrak_glcm(glcm_matrix):
-    levels = glcm_matrix.shape[0]
-    i = np.arange(levels)
-    j = np.arange(levels)
-    I, J = np.meshgrid(i, j, indexing='ij')
+    total_contrast = 0
+    total_energy = 0
+    total_homogeneity = 0
+    jumlah = 0
 
-    contrast = np.sum(glcm_matrix * (I - J) ** 2)
-    energy = np.sum(glcm_matrix ** 2)
-    homogeneity = np.sum(glcm_matrix / (1.0 + np.abs(I - J)))
+    for matrix in glcm_matrix.values():
+        matrix = normalisasi_glcm(matrix)
+        levels = matrix.shape[0]
+        i = np.arange(levels)
+        j = np.arange(levels)
+        I, J = np.meshgrid(i, j, indexing='ij')
+
+        total_contrast += np.sum(matrix * (I - J) ** 2)
+        total_energy += np.sum(matrix ** 2)
+        total_homogeneity += np.sum(matrix / (1.0 + np.abs(I - J)))
+        jumlah += 1
 
     return {
-        'contrast': contrast,
-        'energy': energy,
-        'homogeneity': homogeneity
+        'contrast': total_contrast / jumlah,
+        'energy': total_energy / jumlah,
+        'homogeneity': total_homogeneity / jumlah
     }
 
 def check_merge_condition(mean_sd1, mean_sd2, mean_lab1, mean_lab2, sigma_T, color_T, h_threshold, c_threshold, e_threshold, glcm_feat1=None, glcm_feat2=None):
