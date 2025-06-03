@@ -123,7 +123,7 @@ with tab2:
                     - **Ukuran citra 64x64 - 128x128**: ukuran kernel 1-4
                     - **Ukuran citra 128x128 - 256x256**: ukuran kernel 4-8
                     - **Ukuran citra 256x256 - 512x512**: ukuran kernel 8-12
-                    Semakin kecil nilai R, maka tektur akan semakin tajam dan halus.
+                    - Semakin kecil nilai R, maka tektur akan semakin tajam dan halus.
                     """)
 
             if st.button("Buat SD Map"):
