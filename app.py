@@ -120,11 +120,10 @@ with tab2:
                  st.write(" ")
                  with st.expander("ℹ️ Panduan ukuran kernel"):
                     st.markdown("""
-                    - **Tidak aktif**: Jarang olahraga  
-                    - **Sedikit aktif**: Olahraga 1-3 kali/minggu  
-                    - **Cukup aktif**: Olahraga 3-5 kali/minggu  
-                    - **Aktif**: Olahraga 6-7 kali/minggu  
-                    - **Sangat aktif**: Olahraga 2 kali sehari  
+                    - **Ukuran citra 64x64 - 128x128**: ukuran kernel 1-4
+                    - **Ukuran citra 128x128 - 256x256**: ukuran kernel 4-8
+                    - **Ukuran citra 256x256 - 512x512**: ukuran kernel 8-12
+                    Semakin kecil nilai R, maka tektur akan semakin tajam dan halus.
                     """)
 
             if st.button("Buat SD Map"):
