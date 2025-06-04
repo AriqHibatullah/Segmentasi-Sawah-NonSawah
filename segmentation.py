@@ -125,8 +125,8 @@ def ekstrak_glcm(glcm_matrix):
     jumlah = 0
 
     for matrix in glcm_matrix.values():
-        matrix = normalisasi_glcm(matrix)
-        levels = matrix.shape[0]
+        norm_matrix = normalisasi_glcm(matrix)
+        levels = norm_matrix.shape[0]
         i = np.arange(levels)
         j = np.arange(levels)
         I, J = np.meshgrid(i, j, indexing='ij')
