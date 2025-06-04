@@ -193,9 +193,9 @@ with tab4:
             sigma_merge = np.percentile(st.session_state.sd_map[st.session_state.sd_map >= 0], p_merge * 100)
             sd_threshold = sigma_merge ** 2
             color_threshold = st.number_input("Threshold warna:", min_value=1, max_value=100, value=40, step=1)
-            h_threshold = st.number_input("Threshold homogeneity:", min_value=10, max_value=100, value=60, step=10)
-            c_threshold = st.number_input("Threshold contrast:", min_value=100, max_value=1000, value=500, step=1)
-            e_threshold = st.number_input("Threshold energy:", min_value=10, max_value=100, value=60, step=10)
+            h_threshold = st.number_input("Threshold homogeneity:", min_value=0.1, max_value=0.9, value=0.6, step=0.1)
+            c_threshold = st.number_input("Threshold contrast:", min_value=1, max_value=10, value=5, step=1)
+            e_threshold = st.number_input("Threshold energy:", min_value=0.1, max_value=0.9, value=0.6, step=0.1)
             
             if st.button("Lakukan merge"):
                 if st.session_state.progress >= 36 and st.session_state.progress < 50:
