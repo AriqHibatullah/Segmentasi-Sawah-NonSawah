@@ -398,7 +398,6 @@ with tab8:
             st.pyplot(plt)
 
         with col2:
-            color_threshold_biner = st.number_input("Threshold warna 2:", min_value=1, max_value=100, value=25, step=1)
             if st.button("Buat visualisasi"):
                 if st.session_state.progress >= 84 and st.session_state.progress < 100:
                     st.session_state.progress += 16
