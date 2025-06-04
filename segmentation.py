@@ -131,9 +131,9 @@ def ekstrak_glcm(glcm_matrix):
         j = np.arange(levels)
         I, J = np.meshgrid(i, j, indexing='ij')
 
-        total_contrast += np.sum(matrix * (I - J) ** 2)
-        total_energy += np.sum(matrix ** 2)
-        total_homogeneity += np.sum(matrix / (1.0 + np.abs(I - J)))
+        total_contrast += np.sum(norm_matrix * (I - J) ** 2)
+        total_energy += np.sum(norm_matrix ** 2)
+        total_homogeneity += np.sum(norm_matrix / (1.0 + np.abs(I - J)))
         jumlah += 1
 
     return {
