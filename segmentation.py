@@ -176,7 +176,7 @@ def merge_blocks(blok, sd_map, gray, lab, sigma_T, color_T, h_threshold, c_thres
 
         gray_block = gray[y:y+h, x:x+w]
         glcm_matrix = hitung_glcm(gray_block, 8)
-        glcm_features = ekstrak_glcm(normalisasi_glcm(glcm_matrix[(1, 0)])) 
+        glcm_features = ekstrak_glcm(glcm_matrix)
 
         blok_dict[(x, y, w, h)] = (mean_sd, mean_lab, glcm_features)
 
