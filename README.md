@@ -6,6 +6,11 @@ Sistem ini memanfaatkan algoritma Split and Merge, yang membagi citra menjadi se
 
 Setelah proses segmentasi, aplikasi menampilkan output berupa citra satelit yang sudah diberi warna sesuai area: area sawah dan non-sawah ditandai secara visual sehingga memudahkan identifikasi distribusi sawah di wilayah tersebut.
 
+## 🚀 Try the App
+Coba aplikasi web-nya disini:
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://segmentasi-sawah-nonsawah.streamlit.app/)
+
 🎬 Tonton video demo-nya untuk melihat bagaimana app-nya berjalan:
 
 ## Algoritma yang digunakan
