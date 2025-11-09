@@ -11,12 +11,6 @@ Coba aplikasi web-nya disini:
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://segmentasi-sawah-nonsawah.streamlit.app/)
 
-🎬 Tonton video demo-nya untuk melihat bagaimana app-nya berjalan:
-
-<a href="https://youtu.be/QuMVLwrdL3s">
-  <img src="https://img.youtube.com/vi/QuMVLwrdL3s/0.jpg" width="500">
-</a>
-
 ## Algoritma yang digunakan
 Apliaksi ini menggunakan algoritma *Split and Merge* sebagai inti dari segmentasinya. Algoritma Split and Merge merupakan teknik segmentasi pada pemrosesan citra yang digunakan untuk mengelompokan pixel-pixel berdasarkan homogenitas atau kemiripan tertentu dalam suatu citra. Proses split dilakukan secara berturut-turut dengan membagi citra menjadi beberapa blok berdasarkan kriteria homogenitasnya yang diukur menggunakan standard deviation map, blok dengan variasi piksel yang tidak mempunyai kemiripan akan dipecah hingga memenuhi batas yang telah ditentukan. 
 
@@ -27,6 +21,13 @@ Aplikasi ini menggunakan beberapa fitur citra untuk melakukan segmentasi area sa
 - Standard deviation map untuk Membantu mendeteksi variasi intensitas pixel, sehingga area dengan perbedaan tekstur atau warna yang signifikan dapat dipisahkan.
 - GLCM (Gray Level Co-occurrence Matrix) untuk menangkap pola tekstur sehingga segmen dengan pola serupa bisa digabungkan.
 - Warna LAB untuk membedakan area berdasarkan komponen warna, sehingga membantu memisahkan sawah dari non-sawah yang memiliki spektrum warna berbeda.
+
+## 🎥 Demo Video
+Tonton video demo-nya untuk melihat bagaimana app-nya berjalan:
+
+<a href="https://youtu.be/QuMVLwrdL3s">
+  <img src="https://img.youtube.com/vi/QuMVLwrdL3s/0.jpg" width="500">
+</a>
 
 ## 🛠️ Tech Stack
 - **Web App / UI:** Streamlit
