@@ -6,6 +6,8 @@ Sistem ini memanfaatkan algoritma Split and Merge, yang membagi citra menjadi se
 
 Setelah proses segmentasi, aplikasi menampilkan output berupa citra satelit yang sudah diberi warna sesuai area: area sawah dan non-sawah ditandai secara visual sehingga memudahkan identifikasi distribusi sawah di wilayah tersebut.
 
+🎬 Tonton video demo-nya untuk melihat bagaimana app-nya berjalan:
+
 ## Algoritma yang digunakan
 Apliaksi ini menggunakan algoritma *Split and Merge* sebagai inti dari segmentasinya. Algoritma Split and Merge merupakan teknik segmentasi pada pemrosesan citra yang digunakan untuk mengelompokan pixel-pixel berdasarkan homogenitas atau kemiripan tertentu dalam suatu citra. Proses split dilakukan secara berturut-turut dengan membagi citra menjadi beberapa blok berdasarkan kriteria homogenitasnya yang diukur menggunakan standard deviation map, blok dengan variasi piksel yang tidak mempunyai kemiripan akan dipecah hingga memenuhi batas yang telah ditentukan. 
 
