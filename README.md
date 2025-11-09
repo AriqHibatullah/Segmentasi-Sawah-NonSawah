@@ -14,11 +14,15 @@ Coba aplikasi web-nya disini:
 ## Algoritma yang digunakan
 Apliaksi ini menggunakan algoritma *Split and Merge* sebagai inti dari segmentasinya. Algoritma Split and Merge merupakan teknik segmentasi pada pemrosesan citra yang digunakan untuk mengelompokan pixel-pixel berdasarkan homogenitas atau kemiripan tertentu dalam suatu citra. Proses split dilakukan secara berturut-turut dengan membagi citra menjadi beberapa blok berdasarkan kriteria homogenitasnya yang diukur menggunakan standard deviation map, blok dengan variasi piksel yang tidak mempunyai kemiripan akan dipecah hingga memenuhi batas yang telah ditentukan. 
 
-<img src="images/ss split.png" alt="Hasil split" width="350"/>
+<p align="center">
+  <img src="images/ss split.png" alt="Hasil split" width="350"/>
+</p>
 
 Sedangkan pada proses merge, penggabungan blok akan dilakukan dengan mempertimbangkan beberapa aspek yang digunakan yaitu standard deviation map untuk melihat homogenitas intensitas, fitur warna lab untuk menangkap perbedaan warna agar hasil lebih akurat, dan Gray-Level Co-occurrence matrix (GLCM) untuk mendapatkan ciri tekstur pada suatu citra seperti perulangan pola, distribusi spasial, dan susunan warna dan intensitas.
 
-<img src="images/ss merge.png" alt="Hasil merge" width="350"/>
+<p align="center">
+  <img src="images/ss merge.png" alt="Hasil merge" width="350"/>
+</p>
 
 ## Fitur yang digunakan
 Aplikasi ini menggunakan beberapa fitur citra untuk melakukan segmentasi area sawah dan non-sawah dari citra satelit menggunakan algoritma Split and Merge:
