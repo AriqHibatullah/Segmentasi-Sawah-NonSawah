@@ -17,3 +17,14 @@ Aplikasi ini menggunakan beberapa fitur citra untuk melakukan segmentasi area sa
 - GLCM (Gray Level Co-occurrence Matrix) untuk menangkap pola tekstur sehingga segmen dengan pola serupa bisa digabungkan.
 - Warna LAB untuk membedakan area berdasarkan komponen warna, sehingga membantu memisahkan sawah dari non-sawah yang memiliki spektrum warna berbeda.
 
+## 🛠️ Tech Stack
+- **Web App / UI:** Streamlit
+- **Image Processing:** OpenCV, Pillow
+- **Numerical Computing:** NumPy
+- **Visualization:** Matplotlib
+
+## 👤 Authors
+Project ini dikembangkan oleh:
+- Muhammad Ariq Hibatullah
+- Firdaini Azmi
+- Reva Deshinta Isyana
