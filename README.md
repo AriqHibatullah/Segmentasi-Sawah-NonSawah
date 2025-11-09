@@ -13,6 +13,10 @@ Coba aplikasi web-nya disini:
 
 🎬 Tonton video demo-nya untuk melihat bagaimana app-nya berjalan:
 
+<a href="https://youtu.be/QuMVLwrdL3s">
+  <img src="https://img.youtube.com/vi/QuMVLwrdL3s/0.jpg" width="500">
+</a>
+
 ## Algoritma yang digunakan
 Apliaksi ini menggunakan algoritma *Split and Merge* sebagai inti dari segmentasinya. Algoritma Split and Merge merupakan teknik segmentasi pada pemrosesan citra yang digunakan untuk mengelompokan pixel-pixel berdasarkan homogenitas atau kemiripan tertentu dalam suatu citra. Proses split dilakukan secara berturut-turut dengan membagi citra menjadi beberapa blok berdasarkan kriteria homogenitasnya yang diukur menggunakan standard deviation map, blok dengan variasi piksel yang tidak mempunyai kemiripan akan dipecah hingga memenuhi batas yang telah ditentukan. 
 
